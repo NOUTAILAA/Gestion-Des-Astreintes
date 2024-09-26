@@ -1,0 +1,248 @@
+/* General Container Styling */
+.containeer {
+    margin: 90px auto;
+    max-width: 1200px;
+}
+/* Button Styling */
+.HH {
+    background: linear-gradient(135deg, #aaa318, #ab0a38);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.HH:hover {
+    background: linear-gradient(135deg, #ab0a38, #aaa318);
+    transform: scale(1.05);
+}
+
+.HH:focus {
+    outline: none;
+}
+
+.HH:active {
+    background: #d9534f; /* Slightly darker color for active state */
+    transform: scale(0.98);
+}
+
+/* Card Styling */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px; /* Added padding to adjust the space inside the card */
+}
+
+/* Card Header Styling */
+.card-header {
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-header h2 {
+    margin: 0;
+}
+
+/* Card Body Styling */
+.card-body {
+    padding: 0; /* Removed padding to align the table directly with the card edges */
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #dc3545;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.TABLEE{
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+
+}
+/* Table Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0;
+}
+
+.table th,
+.table td {
+    padding: 10px; /* Adjusted padding for a more compact look */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background: #f8f9fa;
+    color: #333;
+}
+
+.table-row:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Hover Effect for Rows */
+.table-row:hover {
+    background: #e9ecef;
+}
+
+/* Icon Styling */
+.icon-edit,
+.icon-delete {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.icon-edit {
+    color: #007bff;
+}
+
+.icon-delete {
+    color: #dc3545;
+}
+
+.icon-edit:hover,
+.icon-delete:hover {
+    opacity: 0.7;
+}
+
+/* Search Input Styling */
+.group {
+    position: relative;
+    margin-bottom: 20px; /* Add margin to separate it from the table */
+}
+
+.input {
+    font-size: 16px;
+    padding: 10px 10px 10px 40px; /* Added padding to account for the icon */
+    display: block;
+    width: 100%; /* Adjusted width to fit container */
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+/* Search Icon Styling */
+.icon-search {
+    position: absolute;
+    right: 10px; /* Space from the right edge */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+    fill: none;
+    stroke: #999; /* Icon color */
+    cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+}
+
+/* Label and Input Animation */
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%; /* Adjusted width to fit container */
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+/* Pagination Styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    color: white;
+}
+
+.pagination button:hover {
+    background-color: #ddd;
+}

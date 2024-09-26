@@ -1,0 +1,97 @@
+/* ManualPlanningForm.css */
+
+
+.containe2r {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.HHH {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-checkk {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    border-radius: 0.25rem;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+select.form-control {
+    height: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+
+input[type="date"].form-control {
+    height: auto;
+    padding: 0.5rem;
+}
+
+.form-checkk {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* Ajout d'une largeur maximale pour éviter l'agrandissement */
+    max-width: 100%;
+}
+
+.form-checkk input[type="radio"] {
+    margin-right: 0.5rem;
+    flex-shrink: 0; /* Empêche le bouton radio de rétrécir */
+    /* Fixer une largeur pour le bouton radio */
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+h2.HHH {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.form-group label,
+.form-checkk-label {
+    position: static;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #555;
+    flex: 10; /* Permet au label de s'étendre pour occuper l'espace restant */
+    white-space: nowrap;
+}

@@ -1,0 +1,126 @@
+/* Navbar styles */
+.nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    background-color: rgba(227, 220, 220, 0);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 0.9cm;
+}
+
+.nav a:hover {
+    color: #34a02d;
+}
+
+.user {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s;
+}
+
+.user:hover {
+    color: #34a02d;
+}
+/* Page Home styles */
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(135deg, #d0e6a5 0%, #a9c9a3 100%); /* Dégradé de vert moderne */
+    padding: 0 2rem; /* Espacement latéral pour une meilleure répartition */
+    overflow: hidden; /* Évite les barres de défilement indésirables */
+}
+
+.jumbotron {
+    background: rgba(255, 255, 255, 0.9); /* Fond semi-transparent pour un effet de légèreté */
+    border-radius: 15px; /* Coins arrondis pour un style moderne */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée pour plus de profondeur */
+    padding: 3rem 4rem; /* Espacement intérieur accru pour un confort visuel */
+    max-width: 700px; /* Largeur maximale plus grande */
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Assure que le jumbotron est au-dessus du fond */
+}
+
+.display-4 {
+    font-size: 3rem; /* Taille du texte principale plus grande */
+    font-weight: 700; /* Poids du texte audacieux */
+    color: #2c6b2f; /* Couleur verte pour le texte principal */
+    margin-bottom: 1.5rem; /* Espace sous le titre */
+    line-height: 1.3; /* Hauteur de ligne pour une meilleure lisibilité */
+    transition: color 0.3s ease; /* Animation pour la couleur */
+}
+
+.display-4:hover {
+    color: #1a5a2a; /* Changement de couleur au survol */
+}
+
+.lead {
+    font-size: 1.5rem; /* Taille du texte secondaire plus grande */
+    color: #4a7a4f; /* Couleur douce pour le texte secondaire */
+    margin-top: 0;
+    line-height: 1.6; /* Hauteur de ligne pour améliorer l'espacement */
+    transition: color 0.3s ease; /* Animation pour la couleur */
+}
+
+.lead:hover {
+    color: #1a5a2a; /* Changement de couleur au survol */
+}
+
+/* Animation pour le fond d'écran */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.home-content {
+    background: linear-gradient(135deg, #d0e6a5 0%, #a9c9a3 100%);
+    background-size: 200% 200%;
+    animation: gradientAnimation 15s ease infinite; /* Animation du dégradé de couleur */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem; /* Réduction de la taille du texte pour les petits écrans */
+    }
+    
+    .lead {
+        font-size: 1.25rem; /* Réduction de la taille du texte pour les petits écrans */
+    }
+    
+    .jumbotron {
+        padding: 2rem; /* Réduction du padding pour les petits écrans */
+    }
+}

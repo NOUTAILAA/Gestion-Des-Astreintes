@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    background-color: rgba(227, 220, 220, 0); 
+    position: absolute; 
+    width: 100%; 
+    z-index: 1; 
+}
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.nav a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none;
+    transition: color 0.3s; 
+    padding: 0.9cm;
+}
+.nav a:hover {
+    color: #34a02d; 
+}
+.userr {
+    font-size: 1.5rem;
+    color: #34a02d; 
+    transition: color 0.3s; 
+}
+.userr:hover {
+    color: #122510; 
+}

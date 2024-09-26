@@ -1,0 +1,107 @@
+.auto-planning {
+    max-width: 1400px;
+    margin: 100px auto;
+    padding: 100px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.auto-planning h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.auto-planning .form-group {
+    margin-bottom: 20px;
+}
+
+.auto-planning label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #f9f9f9;
+    font-size: 1.1em;
+}
+
+.auto-planning .form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+    color: #333;
+}
+
+.auto-planning .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    background-color: #fff;
+}
+
+.auto-planning .btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.auto-planning .btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.auto-planning .btn:hover::before {
+    width: 400%;
+    height: 400%;
+    top: 50%;
+    left: 50%;
+}
+
+.auto-planning .btn:hover {
+    background: #e04d3e;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.auto-planning .btn:active {
+    transform: translateY(0);
+    background: #d9534f;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.auto-planning .btn:focus {
+    outline: none;
+}
+
+.auto-planning .message {
+    text-align: center;
+    color: #ffecb3;
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}

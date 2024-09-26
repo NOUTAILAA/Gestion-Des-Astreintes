@@ -1,0 +1,93 @@
+/* LatestPlanning.css */
+
+/* Style général du conteneur principal */
+.latest-plannings-wrapper {
+    display: flex; /* Utilise flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    min-height: 100vh; /* Hauteur minimale pour occuper toute la hauteur de la vue */
+    background: #f8f9fa; /* Couleur de fond légère */
+    padding: 2rem;
+    box-sizing: border-box; /* Inclut le padding dans la largeur/hauteur totale */
+}
+
+/* Style de la table */
+.table {
+    width: 80%; /* Largeur maximale pour la table */
+    max-width: 1000px; /* Largeur maximale fixe */
+    border-collapse: collapse; /* Éviter les espaces entre les cellules */
+    background: #fff; /* Fond blanc pour la table */
+    border-radius: 10px; /* Coins arrondis */
+    overflow: hidden; /* Masquer les débordements */
+    margin: 2rem auto; /* Marge auto pour centrer horizontalement */
+}
+
+/* Style des en-têtes de la table */
+.table thead th {
+    background-color: #34a02d; /* Couleur de fond verte pour les en-têtes */
+    color: #fff; /* Texte blanc pour les en-têtes */
+    padding: 12px; /* Padding plus important */
+    text-align: left; /* Alignement du texte à gauche */
+    border-bottom: 2px solid #2c6b2f; /* Bordure inférieure plus marquée */
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Style des lignes du corps de la table */
+.table tbody tr:nth-child(even) {
+    background-color: #f2f9f2; /* Fond alterné clair pour les lignes paires */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Fond blanc pour les lignes impaires */
+}
+
+.table tbody tr:hover {
+    background-color: #e1f5e1; /* Fond vert clair au survol */
+}
+
+/* Style des cellules de la table */
+.table td, .table th {
+    padding: 12px; /* Padding amélioré pour une meilleure lisibilité */
+    border-bottom: 1px solid #dee2e6; /* Bordure inférieure pour les cellules */
+}
+
+/* Style des listes d'agents */
+.table ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Enlever les puces */
+}
+
+.table ul li {
+    padding: 4px 0; /* Padding pour les éléments de liste */
+    color: #333; /* Couleur du texte */
+}
+
+/* Style des messages alternatifs */
+.table span {
+    color: #777; /* Couleur grise pour le texte alternatif */
+}
+
+
+
+
+
+.btnnn{
+    margin-top: 2cm;
+    margin-left: 4cm;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 350px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,2,34,1) 24%, rgba(146,159,164,1) 56%, rgba(139,144,145,1) 85%, rgba(255,255,255,1) 100%);  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+

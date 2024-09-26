@@ -1,0 +1,272 @@
+/* AgentList.css */
+
+/* General container styling */
+.contaer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    max-width: 1400px;
+    
+}
+
+/* Card styling */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px auto;
+    
+}
+
+
+.card-header {
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.card-header h2 {
+    display: block !important; /* Ensure it's displayed */
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    color: #0e3097;
+}
+
+
+
+.btn-primary {
+    background-color: #2575fc;
+    border-color: #2575fc;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+}
+
+.btn-primary:hover {
+    background-color: #1e63d1;
+    border-color: #1e63d1;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 4px;
+}
+
+.spinner-border::before {
+    background-color: #2575fc;
+}
+
+
+
+
+
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-item {
+    margin: 0 2px;
+}
+
+.page-link {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    color: #2575fc;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+    background-color: #2575fc;
+    color: #fff;
+}
+
+.active .page-link {
+    background-color: #2575fc;
+    color: #fff;
+    border: 1px solid #2575fc;
+}
+/*Bouton d'ajout */
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    transition: background-color 0.3s, border-color 0.3s;
+    
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+
+
+
+/* AgentList.css */
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table header styling */
+thead {
+    background-color: #2575fc;
+    color: #ffffff;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Table body styling */
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td {
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Action buttons column */
+tbody td:last-child {
+    text-align: center;
+}
+
+/* Custom table row style for icons */
+.table-row svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.table-row svg:hover {
+    color: #007bff;
+}
+
+
+
+/* AgentList.css */
+.icon-edit {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon-edit:hover {
+    transform: scale(1.1);
+}
+
+.icon-delete {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon-delete:hover {
+    transform: scale(1.1);
+}
+
+
+/* Container for the search input and label */
+.input-container {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Style for the search input field */
+.input-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-container input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Style for the search label */
+.input-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Style for the underline effect below the input */
+.input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s;
+}
+
+/* Icon styling */
+.input-container .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.HHJ{
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
