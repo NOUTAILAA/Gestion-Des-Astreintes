@@ -41,10 +41,13 @@ Gestion des Astreintes est une application de gestion permettant l'enregistremen
    cd Gestion-Des-Astreintes
    
 2.Accédez au répertoire du backend:
+
 cd ProjectStagee
 
 3. Compilez le projet:
+   
 mvn clean install
 
 4.Configurez votre base de données dans le fichier src/main/resources/application.properties.
+
 5.Lancer l'app : mvn spring-boot:run
